@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a Senha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3f0056;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #460163;
+            padding: 70px;
+            border-radius: 5px;
+            box-shadow: 0 0 50px rgb(255, 255, 255);
+            width: 500px;
+            text-align: center;
+            color:#ffffff
+        }
+        .container h2 {
+            color: #ffffff;
+        }
+        .container input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+        }
+        .container button {
+            background-color: #ff8800;
+            text-decoration:none;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .container button:hover {
+            background-color: #dc8310;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Esqueceu a Senha?</h2>
+        <p>Digite seu endereço de e-mail para redefinir sua senha.</p>
+        <form action="/reset-password" method="POST">
+            <input type="email" name="email" placeholder="Seu email" required>
+            <button><a href="senha redefinida.html">Redefinir Senha</a></button>
+        </form>
+    </div>
+</body>
+</html>

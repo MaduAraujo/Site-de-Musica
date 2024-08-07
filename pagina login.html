@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Login</title>
+<style>
+
+  body {
+    background-color: #3f0056;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .login-container {
+    background-color: #460163;
+    padding: 90px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    text-align:center;
+  }
+  .login-container h2 {
+    margin-bottom: 60px;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .input-group a {
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .button {
+    background-color: #ff8800;
+    color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px 0;
+  }
+  .button:hover {
+    background-color: #dc8310;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <h2><img src="img\Captura de tela 2024-08-04 132221.png" alt="Logo do site"></h2>
+  <form action="/submit-login" method="post">
+
+    <div class="input-group">
+        <input type="text" name="username" placeholder="Usuário" required>
+    </div>
+
+    <div class="input-group">
+        <input type="password" name="password" placeholder="Senha" required>
+
+        <a href="pagina esqueceu a senha.html">Esqueceu a Senha?</a>
+    </div>
+    <form>
+      <a href="pagina inicio.html" class="button">Login</a>
+      <p><a href="pagina registre-se.html" class="button">Registre-se</a></p>
+    </form>    
+  </form>
+</div>
+</body>
+</html>
