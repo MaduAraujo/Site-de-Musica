@@ -8,3 +8,6 @@
 
 ![Opinião](https://github.com/user-attachments/assets/3202a0cf-71d5-4704-a16a-4c1088837a80)
 
+![Final do Site](https://github.com/user-attachments/assets/9564928c-e1a5-4cf4-a985-cb1b2700629e)
+
+
