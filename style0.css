@@ -34,7 +34,15 @@ body {
 	background: var(--light-green);
 	cursor: pointer;
 }
-
+#showcase {
+	height: 90vh;
+	background-color: #ff8800;
+	background-blend-mode: color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffff;
+}
 #navbar {
 	display: flex;
 	background-color: #460163;
@@ -69,15 +77,6 @@ body {
 	cursor: pointer;
 }
 
-#showcase {
-	height: 90vh;
-	background-color: #ff8800;
-	background-blend-mode: color;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #ffff;
-}
 #showcase .showcase-container {
 	display: flex;
 	flex-direction: column;

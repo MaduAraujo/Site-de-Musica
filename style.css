@@ -1,7 +1,7 @@
-* body {
+body {
     background-color: #460163;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 .header {
     display: flex;
@@ -34,52 +34,67 @@
     justify-content: center;
     align-items: center;
     height: 20vh;
+    margin-right: 20px;
 }
 .user-icon img {
     border-radius: 30%;
     width: 50px;
     height: 50px;
 }
-button {
-    background-color:#460163; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px;
-    border-radius:5px; 
-    font-size:16px;
+#footer {
+	background: #3f0056;
+	color: white;
+	padding: 40px 0;
+}
+#footer .footer-content {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	justify-content: space-between;
+}
+#footer .footer-content .footer-menu {
+	margin: 0 40px;
+	list-style: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item {
+	margin: 10px 0;
+	transition: all 300ms ease;
+}
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+#footer .footer-content .footer-menu p {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffffb0;
+	font-size: 0.8rem;
+}
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 30%;
+	margin: auto;
+	font-weight: bold;
+	color: #919496;
+	font-size: 0.80rem;
+	padding-top: 50px;
+}
+.footer-info .footer-info-items {
+	display: flex;
+	list-style: none;
+}
+.footer-info .footer-info-items .footer-info-item {
+	margin: 0 10px;
+	transition: all 300ms ease;
+}
+.footer-info .footer-info-items .footer-info-item:hover {
+	color: var(--default-green);
+	cursor: pointer;
 }
 a {
     color: #ffffff;
     text-decoration: none;
-}
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-.elemento {
-    margin: 5px;
-}
-.footer-horizontal {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
-}
-.footer-section {
-    margin:  0 5px;
-}
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-.footer-section ul li {
-    margin: 5px 0;
-}
-footer ul li a:hover {
-    text-decoration: underline;
-}
-.footer-bottom {
-    text-align: center;
-    margin-top: 5vh;
-    padding: 5px 0;
 }
