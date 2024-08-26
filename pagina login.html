@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style2.css">
-<title>Página de Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Página de Login</title>
 </head>
+
 <body>
   <div class="login-container">
-    <h2><img src="img\Captura de tela 2024-08-04 132221.png" alt="Logo do site"></h2>
     <form action="/submit-login" method="post">
+      <h2>Iniciar Sessão</h2>
 
-  <div class="input-group">
-    <input type="text" name="username" placeholder="Usuário" required>
+      <div class="input-group">
+        <input type="text" name="username" placeholder="Usuário" required>
+      </div>
+      
+      <div class="input-group">
+        <input type="password" name="password" placeholder="Senha" required>
+        <a href="pagina esqueceu a senha.html">Esqueceu a Senha?</a>
+      </div>
+    <button><a href="pagina inicio.html">Login</a></button>
+   </form>
+   <br>
+   <button><a href="pagina registre-se.html">Registre-se</a></button>
   </div>
-
-  <div class="input-group">
-    <input type="password" name="password" placeholder="Senha" required>
-    <a href="pagina esqueceu a senha.html">Esqueceu a Senha?</a>
-  </div>
-  
-    <form>
-      <a href="pagina inicio.html" class="button">Login</a>
-      <p><a href="pagina registre-se.html" class="button">Registre-se</a></p>
-    </form>    
-  </form>
-</div>
 </body>
 </html>

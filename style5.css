@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #3f0056;
+    font-family: "Roboto", sans-serif;
+    background-color: #460163;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,12 +8,13 @@ body {
     margin: 0;
 }
 .container {
-    background-color: #460163;
-    padding: 70px;
+    background-color: #ff8800;
+    padding: 100px;
     border-radius: 5px;
-    box-shadow: 0 0 50px rgb(255, 255, 255);
-    width: 500px;
+    box-shadow: 0 0 60px ;
+    width: 400px;
     text-align: center;
+    box-shadow: 0 0 60px #ff8800;
     color:#ffffff
 }
 .container h2 {
@@ -27,7 +28,7 @@ body {
     border-radius: 5px;
 }
 .container button {
-    background-color: #ff8800;
+    background-color: #942db9;
     text-decoration:none;
     color: #ffffff;
     border: none;
@@ -36,7 +37,7 @@ body {
     border-radius: 5px;
 }
 .container button:hover {
-    background-color: #dc8310;
+    background-color: #b947e2;
 }
 a {
     color: #ffffff;
