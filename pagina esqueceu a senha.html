@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style5.css">
+    <script src="script5.js" defer></script>
     <title>Esqueceu a Senha</title>
 </head>
 
@@ -11,8 +12,12 @@
     <div class="container">
         <h2>Esqueceu a Senha?</h2>
         <p>Digite seu endereço de e-mail para redefinir sua senha.</p>
+
         <form action="/reset-password" method="POST">
             <input type="email" name="email" placeholder="Seu email" required>
+            <input type="text" name="username" placeholder="Seu nome de usuário" required>
+            <input type="text" name="phone" placeholder="Seu telefone" required>
+
             <button><a href="senha redefinida.html">Redefinir Senha</a></button>
         </form>
     </div>

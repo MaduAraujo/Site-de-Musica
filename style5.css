@@ -20,7 +20,7 @@ body {
 .container h2 {
     color: #ffffff;
 }
-.container input[type="email"] {
+.container input[type="email"], input[type="text"] {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
