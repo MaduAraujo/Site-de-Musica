@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style5.css">
-    <script src="script5.js" defer></script>
-    <title>Esqueceu a Senha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pagina esqueceu a senha.css">
+    <script type="text/javascript" src=""></script>
+    <title>Aperte o Play</title>
 </head>
-
 <body>
-    <div class="container">
-        <h2>Esqueceu a Senha?</h2>
-        <p>Digite seu endereço de e-mail para redefinir sua senha.</p>
+    <main id="container">
+        <form id="login_form">
 
-        <form action="/reset-password" method="POST">
-            <input type="email" name="email" placeholder="Seu email" required>
-            <input type="text" name="username" placeholder="Seu nome de usuário" required>
-            <input type="text" name="phone" placeholder="Seu telefone" required>
+            <div id="form_header">
+                <h2>Esqueceu a Senha?</h2>
+            </div>
 
-            <button><a href="senha redefinida.html">Redefinir Senha</a></button>
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="email">
+                        Email
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <br>
+                        <div class="input-box">
+                            <label for="email">
+                                Confirme o Email
+                                <div class="input-field">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                            </label>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" id="login_button">
+                Redefinir senha
+            </button>
         </form>
-    </div>
+    </main>
 </body>
 </html>
