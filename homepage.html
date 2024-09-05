@@ -1,109 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style0.css">
-    <script src="script0.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="homepage.js"></script>
     <title>Aperte o Play</title>
 </head>
-<body>
-   
-    <navbar id="navbar">
-        <div class="navbar-container">
-            <img src="img\Captura de tela 2024-08-04 132221.png" alt="Logo" class="logo">
-        
-        <ul class="navbar-items">
-            <li><a href="#about">Ajuda</a></li>
-            <li><a href="pagina registre-se.html">Registre-se</a></li>
-            <li><a href="pagina login.html">Entrar</a></li>
-        </ul>
-        </div>
-    </navbar>
 
-   
-    <div id="showcase">
-        <div class="showcase-container">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Música para Todos</h2>
-            <p>
-                Descubra novas músicas e artistas incríveis em um só lugar.
-            </p>
-            <button class="btn-primary">Venha conhecer nossos planos</button>
+<body>
+    <header>
+        <div class="wraper">
+            <div class="logo">
+                <img src="img\Captura de tela 2024-08-04 132221.png" alt="logo do site" width="50%">
+            </div>
+
+            <div class="hamburger">&#9776;</div>
+            <ul>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Registre-se</a></li>
+                <li><a href="#">Entrar</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="side-bar">
+        <ul>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">-</a></li>
+            <li><a href="#" class="small-li">Registre-se</a></li>
+            <li><a href="#" class="small-li">Entrar</a></li>
+
+            <div id="close">
+                <span id="btn-close">X</span>
+            </div>
+
+            <div class="side-bar-brand">
+                <span>
+                    <img src="./assets/download.png" alt="brand">
+                </span>
+            </div>
+        </ul>
+    </nav>
+
+    <section>
+        <div class=" content">
+            <div class="title-content">
+                <h1>Música para Todos</h1>
+            </div>
+
+            <div class="sub-title-content">
+                <h4>Descubra novas músicas e artistas incríveis em um só lugar.</h4>
+            </div>
+
+            <div class="btn-content">
+                <button class="btn1">Ver planos</button>
+            </div>
+        </div>
+
+        <div class="img-aperteplay">
+            <img src="img\mulher-feliz-ouvindo-musica-em-fones-de-ouvido-sem-fio-e-segurando-o-smartphone-dancando-e-cantando-na-parede-branca.png" alt="imagem do site">
+        </div>
+    </section>
+
+    <div class="section-info">
+        <div class="title-section-info">
+            <h2>Por que ser Premium?</h2>
+
+    <div class=" section-2">
+        <div class="images-section-info">
+            <div class="wraper-images">
+                <div class="images-info">
+                    <img src="img\img1.png" alt="">
+    
+    <div class="text-section-info">
+        <span>Modo offline.</span>
+        <p>Ouça música onde estiver.</p>
+    </div>
+</div>
+</div>
+
+    <div class="wraper-images">
+        <div class="images-info">
+            <img src="img\img2.png" alt="">
+            
+            <div class="text-section-info">
+                <span>Ouça músicas sem anúncios.</span>
+                <p>Curta música, sem parar.</p>
+            </div>
         </div>
     </div>
+    
+    <div class="wraper-images">
+        <div class="images-info">
+            <img src="img\img3.png" alt="">
+            
+            <div class="text-section-info">
+                <span>Ouça o que quiser.</span>
+                <p>Mesmo no celular, tablet ou computador.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wraper-images">
+        <div class="images-info">
+            <img src="img\img4.png" alt="">
+            
+            <div class="text-section-info">
+                <span>Troque de música o quanto quiser.</span>
+                <p>Pule quando quiser.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
-    <section id="features">
-        <h2>Recursos Exclusivos</h2>
-        <br>
-        <div class="feature-item">
-            <h3>Playlists Personalizadas</h3>
-            <br>
-            <p>Crie e compartilhe suas próprias playlists com amigos e familiares.</p>
+    <!--section-plan-->
+    <div class="section-plan">
+        <div class="title-plan">
+            <h2>Escolha seu plano</h2>
+            <p>Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</p>
+            <img src="" alt="">
         </div>
         
-        <div class="feature-item">
-            <h3>Sem Anúncios</h3>
-            <br>
-            <p>Desfrute de música sem interrupções com nossos planos premium.</p>
+        <div class="card-area">
+            <div class="cards">
+                <div class="card-plan-info">
+                    <h2>Plano Family</h2>
+                    <p>R$ 34,90/mês</p>
+                </div>
+                <hr />
+
+                <ul>
+                    <li>Até 6 contas Premium ou Kids</li>
+                    <li>Ouça em qualquer lugar — até no modo offline</li>
+                    <li>Controlar conteúdo marcado como explícito</li>
+                    <li>Faça um plano pré-pago ou uma assinatura</li>
+                </ul>
+
+                <div class="btn-card-plan">
+                    <button>começar</button>
+                </div>
+
+                <div class="text-card-plan">
+                    <p>Para até 6 pessoas. Sujeito a Termos.</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-plan-info">
+                    <span>Grátis por 2 meses</span>
+                    <h2>Plano Duo</h2>
+                    <p>R$ 27,90/mês</p>
+                </div>
+                <hr />
+
+                <ul>
+                    <li>Ouça músicas sem anúncios</li>
+                    <li>Ouça em qualquer lugar — até no modo offline</li>
+                    <li>Faça uma assinatura ou pague uma vez só</li>
+                    <li>2 contas Premium</li>
+                </ul>
+
+                <div class="btn-card-plan">
+                    <button>começar</button>
+                </div>
+
+                <div class="text-card-plan">
+                    <p>Para 2 pessoas. Sujeito a Termos.</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-plan-info">
+                    <span>Grátis por 1 mês</span>
+                    <h2>Universitário</h2>
+                    <p>R$ 11,90/mês</p>
+                </div>
+                <hr />
+
+                <ul>
+                    <li>1 conta Premium verificada</li>
+                    <li>Ouça em qualquer lugar — até no modo offline</li>
+                    <li>Desconto para estudantes elegíveis</li>
+                    <li>Cancele quando quiser</li>
+                </ul>
+
+                <div class="btn-card-plan">
+                    <button>começar</button>
+                </div>
+
+                <div class="text-card-plan">
+                    <p>Para 1 pessoa. Sujeito a Termos.</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-plan-info">
+                    <span>Grátis por 3 meses</span>
+                    <h2>Individual</h2>
+                    <p>R$ 21,90/mês</p>
+                </div>
+                <hr />
+
+                <ul>
+                    <li>1 conta Premium</li>
+                    <li>Ouça em qualquer lugar — até no modo offline</li>
+                    <li>Cancele quando quiser</li>
+                    <li>Faça um plano pré-pago ou uma assinatura</li>
+                </ul>
+
+                <div class="btn-card-plan">
+                    <button>começar</button>
+                </div>
+
+                <div class="text-card-plan">
+                    <p>Somente no plano Individual. Sujeito a Termos.</p>
+                </div>
+            </div>
         </div>
+    </div>
+    
+    <footer>
+        <nav class="nav-footer">
+            <div class="ul-footer">
+                <div class="ul-footer-info">
+                    <div class="footer-brand">
+                        <img src="./img/Captura de tela 2024-08-04 132221.png" alt="logo" width="50px">
+                    </div>
+                </div>
 
-        <div class="news-item">
-            <h3>Modo Offline</h3>
-            <br>
-            <p>Agora você pode baixar suas músicas favoritas e ouvi-las sem conexão com a internet.</p>
-        </div>
-    </section>
+                <div class="ul-footer-info">
+                    <strong>Empresa</strong>
+                    <li><a href="#">sobre</a></li>
+                    <li><a href="#">perguntas frequentes</a></li>
+                </div>
 
-    <section id="testimonials">
-        <h2>O que nossos usuários dizem?</h2>
-        <br>
-        <div class="testimonial">
-            <p>"Aperte o Play mudou a forma como eu escuto música. Adoro a variedade!"</p>
-            <p>- João Silva</p>
-        </div>
+                <div class="ul-footer-info">
+                    <strong>Fale Conosco</strong>
+                    <li><a href="#">email</a></li>
+                </div>
 
-        <div class="testimonial">
-            <p>"Os planos são ótimos e acessíveis. Recomendo a todos!"</p>
-            <p>- Maria Oliveira</p>
-        </div>
-    </section>
+                <div class="ul-footer-info">
+                    <strong>Links úteis</strong>
+                    <li><a href="#">Termos e Condições</a></li>
+                    <li><a href="#">Politica de Privacidade</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </div>
 
-    <footer id="footer">
-        <div class="footer-content">
+                <div class="ul-footer-info">
+                    <div class="social-network">
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Linkedln</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-            <ul class="footer-menu">
-                <p>Empresa</p>
-                <br>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#about">Perguntas Frequentes</a></li>
-            </ul>
-            
-            <ul class="footer-menu">
-                <p>Planos</p>
-                <br>
-                <li><a href="#gold">Plano Gold</a></li>
-                <li><a href="#family">Plano Family</a></li>
-                <li><a href="#free">Plano Free</a></li>
-            </ul>
-            
-            <ul class="footer-menu">
-                <p>Fale Conosco</p>
-                <br>
-                <li><a href="#email">Email</a></li>
-            </ul>
-            
-            <div class="footer-info">
-				
-                <ul class="footer-info-items">
-
-					<li class="footer-info-item">Termos e Condições</li>
-					<li class="footer-info-item">Política de privacidade</li>
-				</ul>
-                <p>&copy; 2024 Aperte o Play</p>
-        </footer>
+            <div class="copyright"><span>&copy; 2024 Aperte o Play</span></div>
+        </nav>
+    </footer>
 </body>
 </html>

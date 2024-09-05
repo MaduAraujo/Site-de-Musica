@@ -1,34 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style1.css">
-  <title>Página de Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pagina login.css">
+    <script type="text/javascript" src="pagina login.js"></script>
+    <title>Aperte o Play</title>
 </head>
-
 <body>
-  <div class="login-container">
-    <form action="/submit-login" method="post">
-      <h2>Iniciar Sessão</h2>
+    <main id="container">
+        <form id="login_form">
 
-      <div class="input-group">
-        <input type="text" name="username" placeholder="Usuário" required>
-      </div>
-      
-      <div class="input-group">
-        <input type="password" name="password" placeholder="Senha" required>
-        <a href="pagina esqueceu a senha.html">Esqueceu a Senha?</a>
-      </div>
+            <div id="form_header">
+                <h2>Iniciar sessão</h2>
+            </div>
 
-      <div class="input-group">
-        <input type="checkbox" name="remember-me" id="remember-me">
-        <label for="remember-me">Lembrar-me</label>
-      </div>
-      <button><a href="pagina inicio.html">Login</a></button>
-   </form>
-   <br>
-   <button><a href="pagina registre-se.html">Registre-se</a></button>
-  </div>
+            <div id="social_media">
+                <a href="#">
+                    <img src="./img/facebook.png" alt="Facebook logo">
+                </a>
+
+                <a href="#">
+                    <img src="./img/google.png" alt="Google logo">
+                </a>
+                
+                <a href="#">
+                    <img src="./img/github.png" alt="GitHub logo">
+                </a>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="input-box">
+                    <label for="email">
+                        Email
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                    
+                    <div id="forgot_password">
+                        <a href="#">
+                            Esqueceu a senha?
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="login_button">
+                Login
+            </button>
+        </form>
+    </main>
 </body>
 </html>
