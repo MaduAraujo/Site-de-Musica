@@ -1,115 +1,235 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="pagina inicio.css">
+    <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
+    <script src="pagina inicio.js" defer></script>
     <title>Aperte o Play</title>
 </head>
 
 <body>
-    <header class="header">
+
+    <div class="sidebar">
         <div class="logo">
-            <img src="img\Captura de tela 2024-08-04 132221.png" alt="Logotipo">
+            <a href="">
+                <img src="./img/Captura de tela 2024-08-04 132221.png" alt="Logo">
+            </a>
         </div>
-        
-        <nav>
-            <ul class="nav-links">
-                <li><a href="podcast.html">Podcasts</a></li>
-                <li><a href="Biblioteca.html">Biblioteca</a></li>
-                <li><a href="curiosidades.html">Curiosidades</a></li>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="fa fa-search"></span>
+                        <span>Pesquisar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Biblioteca.html">
+                        <span class="fa fas fa-book"></span>
+                        <span>Sua biblioteca</span>
+                    </a>
+                </li>
             </ul>
-        </nav>
-        
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar...">
         </div>
-            
-        <div class="user-icon">
-            <img src="img\NicePng_gray-circle-png_1366211.png" alt="Ícone de Usuário">
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="fa fa-home"></span>
+                        <span>Criar Playlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-search"></span>
+                        <span>Músicas Favoritas</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </header>
-</body>
+    </div>
 
-<body>
-    <main>
-        <section class="category">
-            <h3>Recomendados Spotify</h3>
-            
-            <img src="img\transferir.jpeg" alt="Raul Seixas" class="image-container" width="123" height="110">
-            <img src="img\37i9dQZF1DZ06evO4zZagM-default.jpg" alt="Zé Ramalho" class="image-container"  width="123" height="110">
-            <img src="img\37i9dQZF1DZ06evO4yX5Sg-default.jpg" alt="Caetano Veloso" class="image-container"  width="123" height="110">
-            <img src="img\37i9dQZF1DZ06evO2Z9tmo-default.jpg" alt="Alceu Valença" class="image-container"  width="123" height="110">
-            <img src="img\ab67706c0000da841cd9d870ae3c82952e237999.jpeg" alt="Gospel Internacional" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273cef04d6673517b4153e09fb1.jpeg" alt="Gospel Mais Tocados" class="image-container"  width="123" height="110">
-            <img src="img\37i9dQZF1DZ06evO0UpgJy-default.jpg" alt="Forró na Pegada" class="image-container"  width="123" height="110">
-            <img src="img\37i9dQZF1DZ06evO06KplX-default.jpg" alt="Forró Boys" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d00001e02cc67927138c3daeb89ddebea.jpeg" alt="Silvano Sales" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273dfdb99a6e7b0239e50a6a609.jpeg" alt="Pablo" class="image-container"  width="122" height="110">
+    <div class="main-container">
+        <div class="topbar">
 
-            <h3>Recomendados Amazon Music</h3>
+            <div class="prev-next-buttons">
+                <button id="prev" type="button" class="fa fas fa-chevron-left"></button>
+                <button id="next" type="button" class="fa fas fa-chevron-right"></button>
+            </div>
 
-            <img src="img\ab67616d0000b27308f8dee981c773b155a2ab71.jpeg" alt="Samba de Raiz" class="image-container" width="123" height="110">
-            <img src="img\ab67616d00001e0255b52e256a85433e696f2b02.jpeg" alt="Grupo Revelação" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273b548a20a597a88b29932513b.jpeg" alt="Grupo Menos é Mais" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273dc3520a62a328ca8d557c252.jpeg" alt="Pixote" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b27302e4a8d93ee164e5bd371052.jpeg" alt="Exaltasamba" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273091c48f6f378a0bf8de56454.jpeg" alt="Belo" class="image-container"  width="123" height="110">
-            <img src="img\ab67706c0000da842a9c6fe6290aea8f022777f9.jpeg" alt="Sorriso Maroto" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273d351b105a0d429c4be382e5d.jpeg" alt="Péricles" class="image-container"  width="123" height="110">
-            <img src="img\ab67706c0000da84ad477a47034d9168f33edce5.jpeg" alt="Zeca Pagodinho" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273209a1d232c595f25a50d0e08.jpeg" alt="Jorge Aragão" class="image-container"  width="122" height="110">
-                
-            <h3>Recomendados Apple Music</h3>
-            
-            <img src="img\ab67616d0000b2733598d562e8fdb234c208364e.jpeg" alt="Gustavo Lima" class="image-container" width="123" height="110">
-            <img src="img\ab67706c0000da84ee85d8b8615a4eecc8dc2655.jpeg" alt="Jorge e Mateus" class="image-container"  width="123" height="110">
-            <img src="img\ab67706c0000da84c4b235660f22da7710cfd152.jpeg" alt="Ana Castela" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b27392aaf0254618b4de33029ab1.jpeg" alt="Marilia Mendonça" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273c9dee50d9ee501321a43004d.jpeg" alt="Chitãozinho e Xororó" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273294c660d441da10e69cad7b9.jpeg" alt="Bruno e Marrone" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d0000b273eb1117ed6a411587785d7ae4.jpeg" alt="Zé Neto e Cristiano" class="image-container"  width="123" height="110">
-            <img src="img\ab67706c0000da843bb1770f1d882b6c32f125ce.jpeg" alt="Henrique e Juliano" class="image-container"  width="123" height="110">
-            <img src="img\ab67706c0000da8450cc3df6490e7e9ef10a6319.jpeg" alt="Eduardo Costa" class="image-container"  width="123" height="110">
-            <img src="img\ab67616d00001e021f46ccf99f1ebb91b62dd1f9.jpeg" alt="Leonardo" class="image-container"  width="122" height="110">
-        </section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <footer id="footer">
-            <div class="footer-content">
-                <ul class="footer-menu">
-                    <p>Empresa</p>
-                    <br>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#jobs">Job</a></li>
-                    <li><a href="#sustainability">Sustentabilidade</a></li>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <button type="button" onclick="location.href='curiosidades.html'">Curiosidades</button>
+                    </li>
                 </ul>
-                
-                <ul class="footer-menu">
-                    <p>Planos</p>
-                    <br>
-                    <li><a href="#gold">Plano Gold</a></li>
-                    <li><a href="#family">Plano Family</a></li>
-                    <li><a href="#free">Plano Free</a></li>
-                </ul>
-                
-                <ul class="footer-menu">
-                    <p>Fale Conosco</p>
-                    <br>
-                    <li><a href="#email">Email</a></li>
-                </ul>
-                
-                <div class="footer-info">
+                <button type="button" onclick="location.href='podcast.html'">Podcasts</button>
+            </div>
+        </div>
 
-                    <ul class="footer-info-items">
-                        <li class="footer-info-item">Termos e Condições</li>
-                        <li class="footer-info-item">Política de privacidade</li>
-                    </ul>
-                    <p>&copy; 2024 Aperte o Play</p>
-        </footer>
-    </main>
+        <div class="spotify-playlists">
+            <h2>Spotify</h2>
+
+            <div class="list">
+                <div class="item">
+                    <img src="img\37i9dQZF1DZ06evO2Z9tmo-default.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\37i9dQZF1DZ06evO4yX5Sg-default.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\37i9dQZF1DZ06evO4zZagM-default.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\37i9dQZF1DZ06evO06KplX-default.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\37i9dQZF1DZ06evO0UpgJy-default.jpg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67616d0000b273cef04d6673517b4153e09fb1.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67706c0000da841cd9d870ae3c82952e237999.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spotify-playlists">
+            <h2>Amazon Music</h2>
+
+            <div class="list">
+                <div class="item">
+                    <img src="img\ab67616d0000b273b548a20a597a88b29932513b.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67616d0000b273d351b105a0d429c4be382e5d.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67616d0000b273dc3520a62a328ca8d557c252.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67616d0000b27302e4a8d93ee164e5bd371052.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67616d0000b27308f8dee981c773b155a2ab71.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67616d0000b273209a1d232c595f25a50d0e08.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67616d00001e0255b52e256a85433e696f2b02.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spotify-playlists">
+            <h2>Apple Music</h2>
+
+            <div class="list">
+                <div class="item">
+                    <img src="img\ab67616d0000b2733598d562e8fdb234c208364e.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67616d00001e021f46ccf99f1ebb91b62dd1f9.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67706c0000da84c4b235660f22da7710cfd152.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67706c0000da84ee85d8b8615a4eecc8dc2655.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67706c0000da843bb1770f1d882b6c32f125ce.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img\ab67706c0000da8450cc3df6490e7e9ef10a6319.jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

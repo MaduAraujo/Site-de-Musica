@@ -3,7 +3,8 @@
 :root {
     --bg-color: #993399;
     --bg-header: #460163;
-    --txt-color: #fff;
+    --txt-color: #ffffff;
+    --color-gradient: linear-gradient(90deg, var(--bg-color), var(--bg-header), var(--txt-color));
 }
 
 * {
