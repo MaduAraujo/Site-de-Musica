@@ -1,5 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+.section-partnerships {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.section-partnerships h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.partner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.partner {
+    margin: 20px;
+    text-align: center;
+}
+
+.partner img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.partner h3 {
+    font-size: 1.4em;
+    color: #ff8800;
+    margin-top: 10px;
+}
+
+.section-stats {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.section-stats h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.stat {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.726);
+    flex: 0 0 auto;
+}
+
+.stat h3 {
+    font-size: 2em;
+    color: #ff8800;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 1.2em;
+    color: #000000;
+}
+
 :root {
     --bg-color: #993399;
     --bg-header: #460163;
@@ -12,7 +89,6 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-
 }
 
 header {
@@ -93,7 +169,6 @@ ul li a:hover {
     font-weight: 300;
     letter-spacing: 1px;
     font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
-
 }
 
 .side-bar .small-li {
@@ -127,12 +202,9 @@ ul li a:hover {
     overflow-y: hidden;
 }
 
-
 .side-bar-brand span img {
     width: 100px;
 }
-
-/* section */
 
 section {
     display: flex;
@@ -411,7 +483,6 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .footer-brand {
@@ -604,7 +675,6 @@ footer {
         align-items: center;
         flex-direction: column;
     }
-
 
     .cards {
         width: 100%;
