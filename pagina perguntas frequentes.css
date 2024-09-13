@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+     --color-light-50: #f8fafc;
+    --color-purple-50: #ff8800;
+    --color-purple-100: #942db9;
+    --color-purple-200: #460163;
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--color-gradient);
+    margin: 0;
+    padding: 0;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    margin: 0;
+    padding: 10px;
+    background-color: #9912c2c1;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ff9d00;
+    border-radius: 4px;
+}
+
+.faq-question:hover {
+    background-color: #a20fb3;
+}
+
+@media (max-width: 600px) {
+    .faq-container {
+        padding: 10px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}
