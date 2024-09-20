@@ -2,77 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="pagina login.css">
-    <script type="text/javascript" src="pagina login.js"></script>
+    <script src="pagina login.js">defer</script>
     <title>Aperte o Play</title>
 </head>
+
 <body>
-    <main id="container">
-        <form id="login_form">
+    <div class="container">
+        <div class="logo"><img src="./img/spotify-logo.png" alt=""></div>
+        <h1>Iniciar Sessão</h1>
+        
 
-            <div id="form_header">
-                <h2>Iniciar sessão</h2>
-            </div>
+        <form action="">
+            <button class="icon-btn"><img src="./img/google.png" alt="">Cadastre-se com o Google</button>
+            <button class="icon-btn"><img src="./img/github.png" alt="">Cadastre-se com o GitHub</button>
+            <button class="icon-btn">Continue com o número de telefone</button>
 
-            <div id="social_media">
-                <a href="#">
-                    <img src="./img/facebook.png" alt="Facebook logo">
-                </a>
+            <div class="line"></div>
 
-                <a href="#">
-                    <img src="./img/google.png" alt="Google logo">
-                </a>
-                
-                <a href="#">
-                    <img src="./img/github.png" alt="GitHub logo">
-                </a>
-            </div>
-
-            <div id="inputs">
-                <div class="input-box">
-                    <label for="name">
-                        Nome
-                        <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" id="name" name="name">
-                        </div>
-                    </label>
-                </div>
-                
-                <div class="input-box">
-                    <label for="email">
-                        Email
-                        <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="email" id="email" name="email">
-                        </div>
-                    </label>
-                </div>
-                
-                <div class="input-box">
-                    <label for="password">
-                        Senha
-                        <div class="input-field">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" id="password" name="password">
-                        </div>
-                    </label>
-                    
-                    <div id="forgot_password">
-                        <a href="./pagina esqueceu a senha.html">
-                            Esqueceu a senha?
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <button type="submit" id="login_button">
-                Login
-            </button>
+            <input type="text" placeholder="Email"><br>
+            <input type="text" placeholder="Senha"><br>
+            <button class="next">Acessar</button>
+            
+            <div class="forget"><a href="">Esqueceu a senha?</a></div>
         </form>
-    </main>
+
+        <p class="term">Este site é protegido pelo reCAPTCHA e pelo Google.<br> <a href="" class="privacy">Politica de Privacidade</a>
+        e <a href="" class="privacy">Termos de Serviço</a>.
+        </p>
+    </div>
 </body>
 </html>

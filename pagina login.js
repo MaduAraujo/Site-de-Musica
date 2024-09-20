@@ -1,18 +1,41 @@
-const mode = document.getElementById('mode_icon');
+document.addEventListener('DOMContentLoaded', (event) => {
+    const form = document.querySelector('form');
+    const emailInput = document.querySelector('input[placeholder="Email"]');
+    const passwordInput = document.querySelector('input[placeholder="Senha"]');
+    const nextButton = document.querySelector('button.next');
 
-mode.addEventListener('click', () => {
-    const form = document.getElementById('login_form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Evita o envio do formulário
 
-    if(mode.classList.contains('fa-moon')) {
-        mode.classList.remove('fa-moon');
-        mode.classList.add('fa-sun');
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
 
-        form.classList.add('dark');
-        return ;
+        if (!email) {
+            alert('O campo de email é obrigatório.');
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            alert('Por favor, insira um email válido.');
+            return;
+        }
+
+        if (!password) {
+            alert('O campo de senha é obrigatório.');
+            return;
+        }
+
+        if (password.length < 6) {
+            alert('A senha deve ter pelo menos 6 caracteres.');
+            return;
+        }
+
+        // Se tudo estiver correto, você pode enviar o formulário ou fazer outra ação
+        alert('Formulário enviado com sucesso!');
+    });
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
     }
-    
-    mode.classList.remove('fa-sun');
-    mode.classList.add('fa-moon');
-
-    form.classList.remove('dark');
 });

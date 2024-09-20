@@ -8,136 +8,138 @@
     --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
 }
 
-* {
-    font-family: 'Poppins', sans-serif;
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: regular;
 }
 
-#container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@font-face {
+    font-family: title;
+    src: url('./font/title.woff2');
+}
+
+@font-face {
+    font-family: regular;
+    src: url('./font/regular.woff2');
+}
+
+body{
     background: var(--color-gradient);
 }
 
-#login_form {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    background-color: var(--color-light-50);
-    padding: 30px 40px;
-    border-radius: 8px;
-    gap: 30px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
-    animation: dark-to-light-background 0.3s ease-in-out;
+.container{
+    width: 380px;
+    padding: 0px 28px;
+    margin: auto;
+    text-align: center;
 }
 
-#form_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+h1{
+    color: rgb(0, 0, 0);
+    font-family: title;
+    font-size: 45px;
 }
 
-#form_header h1 {
-    font-size: 40px;
+form{
+    padding: 20px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 12px 0px;
+    padding-left: 8px;
+    margin: 8px 0px;
+    border-radius: 6px;
+    background: none;
+    border: 1px solid #000000;
+    color: rgb(255, 255, 255);
+}
+
+input:hover{
+    border: 1px solid white;
+}
+
+form a{
+    color: #000000;
+    font-size: 15px;
+}
+
+.next{
+    all: unset;
+    width: 320px;
+    padding: 12px;
+    margin: 20px 0px;
+    background: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+button.next:hover {
+    background-color: #ffffffac;
+}
+
+.line{
+    width: 100%;
+    height: 0.3px;
+    margin: 16px 0px;
+    text-align: center;
+    background: #000000;
     position: relative;
 }
 
-#form_header h1::before {
+.line::before{
+    content: "ou";
+    width: 30px;
+    height: 30px;
     position: absolute;
-    content: '';
-    width: 40%;
-    height: 3px;
-    background-color: var(--color-purple-50);
-    bottom: 10px;
-    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    background: #121212;
+    color: white;
+    border-radius: 80%;
+    line-height: 30px;
 }
 
-#mode_icon {
+.icon-btn{
+    all: unset;
+    width: 320px;
+    padding: 12px;
+    margin: 4px 0px;
+    border: 1px solid #000000;
+    color: rgb(255, 255, 255);
+    font-family: title;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 32px;
     cursor: pointer;
-    font-size: 20px;
+    overflow: hidden;
 }
 
-#social_media {
-    display: flex;
-    justify-content: space-around;
+.icon-btn img{
+    width: 20px;
+    float: left;
+    margin-left: 12px;
 }
 
-#social_media img {
-    width: 35px;
+.icon-btn:hover{
+    border: 1px solid white;
 }
 
-#social_media img:hover {
-    transform: scale(1.2);
+.term{
+    margin-top: 24px;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
 }
 
-#inputs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.input-box>label {
-    font-size: 14px;
-    color: var(--color-dark-50);
-}
-
-.input-field {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 3px;
-    border-bottom: 1px solid var(--color-purple-50);
-    cursor: text;
-}
-
-.input-field i {
-    font-size: 18px;
-    cursor: text;
-    color: var(--color-dark-900);
-} 
-
-.input-field input {
-    border: none;
-    width: 260px;
-    background-color: transparent;
-    font-size: 18px;
-    padding: 0px 5px;
-}
-
-.input-field input:focus {
-    outline: none;
-}
-
-/* Forgot password */
-#forgot_password a {
-    text-decoration: none;
-    color: var(--color-dark-50);
+.privacy{
+    color: #000000;
     font-size: 12px;
 }
-
-#forgot_password a:hover {
-    color: var(--color-purple-50);
-}
-
-#login_button {
-    border: none;
-    background: var(--color-gradient);
-    padding: 7px;
-    border-radius: 3px;
-    color: var(--color-light-50);
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-#login_button:hover {
-    transform: scale(1.05);
-}
-
