@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina curiosidades.css">
+    <script src="pagina curiosidades.js" defer></script>
+    <title>Aperte o Play</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Você sabia?</h1>
+        <br>
+        <p><span class="highlight">Brian May</span> - guitarrista do grupo Queen</p>
+        <p>O som único da guitarra de May tem ainda outro componente especial: uma moeda antiga que 
+            ele utiliza para tocar, ao invés de uma palheta.</p>
+        <br>
+        <p><span class="highlight">Freddie Mercury</span> - Vocal</p>
+        <p>Antes de ser vocal do grupo Queen Fred Mercury foi campeão de Tênis de Mesa.</p>
+        <br>
+        <h1>Qual é a sua música favorita do Queen?</h1>
+        <br>
+        <input type="text" id="favoriteSong" placeholder="Escreve aqui">
+        <button onclick="submitFavoriteSong()">Enviar</button>
+        <p id="response"></p>
+    </div>
+    
+    <div class="card">
+        <h1>O que você sabe que não sabemos ainda?</h1>
+        <p>Sobre bandas, integrantes, etc</p>
+        <input type="text" id="curiosidades" placeholder="Escreve aqui">
+        <button onclick="submitFavoriteSong()">Enviar</button>
+        <p id="response"></p>
+    </div>
+</body>
+</html>
