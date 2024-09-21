@@ -1,41 +1,27 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
-    const emailInput = document.querySelector('input[placeholder="Email"]');
-    const passwordInput = document.querySelector('input[placeholder="Senha"]');
-    const nextButton = document.querySelector('button.next');
+    const emailInput = form.querySelector('input[type="text"]');
+    const passwordInput = form.querySelector('input[type="password"]');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault(); // Evita o envio do formulário
-
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
         const email = emailInput.value.trim();
         const password = passwordInput.value.trim();
-
-        if (!email) {
-            alert('O campo de email é obrigatório.');
+        
+        if (!emailPattern.test(email)) {
+            alert('Por favor, insira um endereço de email válido.');
             return;
         }
-
-        if (!validateEmail(email)) {
-            alert('Por favor, insira um email válido.');
-            return;
-        }
-
-        if (!password) {
-            alert('O campo de senha é obrigatório.');
-            return;
-        }
-
+        
         if (password.length < 6) {
             alert('A senha deve ter pelo menos 6 caracteres.');
             return;
         }
-
-        // Se tudo estiver correto, você pode enviar o formulário ou fazer outra ação
+        
+        // Se tudo estiver correto, você pode enviar o formulário
         alert('Formulário enviado com sucesso!');
+        form.submit();
     });
-
-    function validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
 });

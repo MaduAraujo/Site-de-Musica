@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="pagina login.css">
     <script src="pagina login.js">defer</script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Aperte o Play</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="logo"><img src="./img/spotify-logo.png" alt=""></div>
+        <br>
         <h1>Iniciar Sessão</h1>
-        
 
         <form action="">
-            <button class="icon-btn"><img src="./img/google.png" alt="">Cadastre-se com o Google</button>
-            <button class="icon-btn"><img src="./img/github.png" alt="">Cadastre-se com o GitHub</button>
-            <button class="icon-btn">Continue com o número de telefone</button>
+            <label for="">Endereço de email</label><br>
+            <input type="text" placeholder="name@domain.com"><br>
 
-            <div class="line"></div>
-
-            <input type="text" placeholder="Email"><br>
-            <input type="text" placeholder="Senha"><br>
-            <button class="next">Acessar</button>
+            <label for="password">Senha</label><br>
+            <input type="password" id="password" placeholder="Digite sua senha"><br>
             
-            <div class="forget"><a href="">Esqueceu a senha?</a></div>
-        </form>
+            <button class="next">Entrar</button>
 
-        <p class="term">Este site é protegido pelo reCAPTCHA e pelo Google.<br> <a href="" class="privacy">Politica de Privacidade</a>
-        e <a href="" class="privacy">Termos de Serviço</a>.
-        </p>
+            <div class="line"></div><br>
+
+            <button class="icon-btn"><img src="./img/google.png" alt="">Faça login com o Google</button>
+            <button class="icon-btn"><img src="./img/github.png" alt="">Faça login com o GitHub</button>
+
+            <div class="line2"></div>
+
+            <div class="already">Não tem uma conta? <a href="./login.html" class="login-here">Registre-se</a></div>
+
+            <p class="term">Este site é protegido pelo reCAPTCHA e pelo Google<br><a href="" class="privacy">Politica de Privacidade</a> e <a href="" class="privacy">Termo de Serviço</a>.</p>
+        </form>
     </div>
 </body>
 </html>

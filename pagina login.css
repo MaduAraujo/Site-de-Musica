@@ -36,15 +36,24 @@ body{
 }
 
 h1{
-    color: rgb(0, 0, 0);
+    color: white;
     font-family: title;
     font-size: 45px;
+}
+
+span{
+    display: block;
 }
 
 form{
     padding: 20px;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 16px;
+}
+
+label{
+    font-family: 16px;
+    color: rgb(255, 255, 255);
 }
 
 input{
@@ -54,8 +63,8 @@ input{
     margin: 8px 0px;
     border-radius: 6px;
     background: none;
-    border: 1px solid #000000;
-    color: rgb(255, 255, 255);
+    border: 1px solid #cccccc;
+    color: white;
 }
 
 input:hover{
@@ -63,8 +72,8 @@ input:hover{
 }
 
 form a{
-    color: #000000;
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .next{
@@ -80,10 +89,6 @@ form a{
     cursor: pointer;
 }
 
-button.next:hover {
-    background-color: #ffffffac;
-}
-
 .line{
     width: 100%;
     height: 0.3px;
@@ -95,16 +100,16 @@ button.next:hover {
 
 .line::before{
     content: "ou";
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 100%;
-    background: #121212;
+    background: #000000;
     color: white;
-    border-radius: 80%;
-    line-height: 30px;
+    border-radius: 50%;
+    line-height: 40px;
 }
 
 .icon-btn{
@@ -112,8 +117,8 @@ button.next:hover {
     width: 320px;
     padding: 12px;
     margin: 4px 0px;
-    border: 1px solid #000000;
-    color: rgb(255, 255, 255);
+    border: 1px solid #cccccc;
+    color: white;
     font-family: title;
     font-weight: 600;
     text-align: center;
@@ -132,14 +137,33 @@ button.next:hover {
     border: 1px solid white;
 }
 
+.line2{
+    width: 100%;
+    height: 0.3px;
+    margin: 28px 0px;
+    text-align: center;
+    background: #000000;
+    opacity: 0.5;
+}
+
+.already{
+    text-align: center;
+    color: #ffffff;
+}
+
+.login-here{
+    color: white;
+    font-size: 16px;
+}
+
 .term{
     margin-top: 24px;
     font-size: 12px;
-    color: #000000;
+    color: #cccccc;
     text-align: center;
 }
 
 .privacy{
-    color: #000000;
+    color: #cccccc;
     font-size: 12px;
 }
