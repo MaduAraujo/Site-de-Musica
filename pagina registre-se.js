@@ -1,18 +1,26 @@
-function validateForm() {
-    var username = document.forms["registerForm"]["username"].value;
-    var email = document.forms["registerForm"]["email"].value;
-    var password = document.forms["registerForm"]["password"].value;
-    var confirmPassword = document.forms["registerForm"]["confirm_password"].value;
+document.addEventListener('DOMContentLoaded', (event) => {
+    const form = document.querySelector('form');
+    const emailInput = document.querySelector('input[type="text"]');
+    const passwordInput = document.querySelector('#password');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (username == "" || email == "" || password == "" || confirmPassword == "") {
-        alert("Todos os campos devem ser preenchidos.");
-        return false;
-    }
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let valid = true;
 
-    if (password != confirmPassword) {
-        alert("As senhas não coincidem.");
-        return false;
-    }
+        if (!emailPattern.test(emailInput.value)) {
+            alert('Por favor, insira um endereço de email válido.');
+            valid = false;
+        }
 
-    return true;
-}
+        if (passwordInput.value.length < 6) {
+            alert('A senha deve ter pelo menos 6 caracteres.');
+            valid = false;
+        }
+
+        if (valid) {
+            alert('Formulário enviado com sucesso!');
+            form.submit();
+        }
+    });
+});

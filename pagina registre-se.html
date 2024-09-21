@@ -2,79 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pagina registre-se.css">
-    <script type="text/javascript" src="pagina login.js"></script>
+    <script src="pagina registre-se.js">defer</script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Aperte o Play</title>
 </head>
+
 <body>
-    <main id="container">
-        <form id="login_form">
+    <div class="container">
+        <br>
+        <h1>Registre-se</h1>
 
-            <div id="form_header">
-                <h2>Registre-se</h2>
-            </div>
+        <form action="">
+            <label for="">Endereço de email</label><br>
+            <input type="text" placeholder="name@domain.com"><br>
 
-            <div id="social_media">
-                <a href="#">
-                    <img src="./img/facebook.png" alt="Facebook logo">
-                </a>
+            <label for="password">Senha</label><br>
+            <input type="password" id="password" placeholder="Digite sua senha"><br>
+            
+            <button class="next">Registrar</button>
 
-                <a href="#">
-                    <img src="./img/google.png" alt="Google logo">
-                </a>
-                
-                <a href="#">
-                    <img src="./img/github.png" alt="GitHub logo">
-                </a>
-            </div>
+            <div class="line"></div><br>
 
-            <div id="inputs">
-                <div class="input-box">
-                    <label for="name">
-                        Nome
-                        <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" id="name" name="name">
-                        </div>
-                    </label>
-                </div>
-                
-                <div class="input-box">
-                    <label for="email">
-                        Email
-                        <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="email" id="email" name="email">
-                        </div>
-                    </label>
-                </div>
-                
-                <div class="input-box">
-                    <label for="password">
-                        Senha
-                        <div class="input-field">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" id="password" name="password">
-                        </div>
-                    </label>
+            <button class="icon-btn"><img src="./img/google.png" alt="">Faça resgistro com o Google</button>
+            <button class="icon-btn"><img src="./img/github.png" alt="">Faça resgistro com o GitHub</button>
 
-                    <div class="input-box">
-                        <label for="password">
-                            Confirme a Senha
-                            <div class="input-field">
-                                <i class="fa-solid fa-key"></i>
-                                <input type="password" id="password" name="password">
-                            </div>
-                        </label>
-                </div>
-            </div>
-            <button type="submit" id="login_button">
-                Registre-se
-            </button>
+            <div class="line2"></div>
+
+            <div class="already">Já tem uma conta? <a href="./login.html" class="login-here">Faça Login</a></div>
+
+            <p class="term">Este site é protegido pelo reCAPTCHA e pelo Google<br><a href="" class="privacy">Politica de Privacidade</a> e <a href="" class="privacy">Termo de Serviço</a>.</p>
         </form>
-    </main>
+    </div>
 </body>
 </html>
