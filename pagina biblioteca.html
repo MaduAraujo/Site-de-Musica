@@ -3,296 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="pagina biblioteca.css">
-    <script src=""></script>
+    <script src="pagina biblioteca.js">defer</script>
     <title>Aperte o Play</title>
 </head>
 
 <body>
-    <header>
-        <div class="menu_slide">
-            <div class="playlist">
-                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Ouvidos da Semana</h4>
+
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img src="./img/Captura de tela 2024-08-04 132221.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="homepage.html">
+              <span class="fa fa-home"></span>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fa-search"></span>
+              <span>Pesquisar</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+              <span>Criar Playlist</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#">
+              <span class="fa fas fa-heart"></span>
+              <span>Músicas Favoritas</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="policies">
+        <ul>
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+          <li>
+            <a href="#">Politica de Privacidade</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="prev-next-buttons">
+        </div>
+            
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="pagina curiosidades.html">Curiosidade</a>
+                </li>
+                <li class="divider">|</li>
+                <li>
+                    <a href="pagina podcast.html">Podcast</a>
+                </li>
+                <li class="divider">|</li>
+                <li>
+                    <a href="pagina musica.html">Músicas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="spotify-playlists">
+        <h2>Biblioteca</h2>
+        
+        <div class="list">
+          <div class="item">
+            <img src="img\0x1900-000000-80-0-0 (2).jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
             </div>
+          </div>
 
-            <div class="menu_song">
-                <li class="songItem">
-                    <span>01</span>
-                    <img src="img\37i9dQZF1DZ06evO0UpgJy-default.jpg" alt="img">
-                    <h5>
-                        <p>Forró na Pegada</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="1"></i>
-                </li>
+          <div class="item">
+            <img src="img\ab67616d0000b273cef04d6673517b4153e09fb1.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
 
-                <li class="songItem">
-                    <span>02</span>
-                    <img src="img\37i9dQZF1DZ06evO2Z9tmo-default.jpg" alt="img">
-                    <h5>
-                        <p>Alceu Valença</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="2"></i>
-                </li>
+          <div class="item">
+            <img src="img\ab67616d0000b273d351b105a0d429c4be382e5d.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
 
-                <li class="songItem">
-                    <span>03</span>
-                    <img src="img\37i9dQZF1DZ06evO4yX5Sg-default.jpg" alt="img">
-                    <h5>
-                        <p>Caetano Veloso</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="3"></i>
-                </li>
+          <div class="item">
+            <img src="img\ab67616d0000b273ff5429125128b43572dbdccd.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
 
-                <li class="songItem">
-                    <span>04</span>
-                    <img src="img\37i9dQZF1DZ06evO4zZagM-default.jpg" alt="img">
-                    <h5>
-                        <p>Zé Ramalho</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="4"></i>
-                </li>
+          <div class="item">
+            <img src="img\ab67616d0000b273209a1d232c595f25a50d0e08.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
 
-                <li class="songItem">
-                    <span>05</span>
-                    <img src="img\37i9dQZF1DZ06evO06KplX-default.jpg" alt="img">
-                    <h5>
-                        <p>Forró Boys</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="5"></i>
-                </li>
-
-                <li class="songItem">
-                    <span>06</span>
-                    <img src="img\ab67616d0000b273b548a20a597a88b29932513b.jpeg" alt="img">
-                    <h5>
-                        <p>Menos é Mais</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="6"></i>
-                </li>
-
-                <li class="songItem">
-                    <span>07</span>
-                    <img src="img\ab67616d0000b273c9dee50d9ee501321a43004d.jpeg" alt="img">
-                    <h5>
-                        <p>Chitãozinho e Xororó</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="7"></i>
-                </li>
-
-                <li class="songItem">
-                    <span>08</span>
-                    <img src="img\ab67616d0000b273cef04d6673517b4153e09fb1.jpeg" alt="img">
-                    <h5>
-                        <p>Gospel</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="8"></i>
-                </li>
-
-                <li class="songItem">
-                    <span>09</span>
-                    <img src="img\ab67616d0000b273d351b105a0d429c4be382e5d.jpeg" alt="img">
-                    <h5>
-                        <p>Pagode do Periclão</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="9"></i>
-                </li>
-
-                <li class="songItem">
-                    <span>10</span>
-                    <img src="img\ab67616d0000b273dc3520a62a328ca8d557c252.jpeg" alt="img">
-                    <h5>
-                        <p>Pixote</p>
-                    </h5>
-                    <i class="bi playlistPlay bi-play-circle-fill" id="10"></i>
-                </li>
+          <div class="item">
+            <img src="img\channels4_profile (1).jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
             </div>
         </div>
-
-        <div class="song_slide">
-            <nav>
-                <ul>
-                    <li>Biblioteca<span></span></li>
-                    <li>Podcasts</li>
-                    <li>Músicas</li>
-                    <li>Curiosidades</li>
-                </ul>
-
-                <div class="search">
-                    <input type="text" placeholder="Pesquisar">
-                </div>
-
-                <div class="user">
-                    <img src="img\NicePng_gray-circle-png_1366211.png" alt="img" title="usuario">
-                </div>
-            </nav>
-            <br>
-
-            <div class="popular_song">
-                <div class="h4">
-                    <h4>Recentes</h4>
-                    <div class="btn_5">
-                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
-                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
-                    </div>
-                </div>
-
-                <div class="pop_song">
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\ab67706c0000da841cd9d870ae3c82952e237999.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="7"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\ab67616d0000b273dfdb99a6e7b0239e50a6a609.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="8"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\ab67616d0000b27308f8dee981c773b155a2ab71.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="9"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.53 (3).jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="10"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.55.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="11"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.53.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="12"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.53 (2).jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="13"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\1000x1000 (1).jpg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="14"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\1000x1000.jpg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="15"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\31510b4c3771c9c4f939c7836797144748517e01.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="16"></i>
-                        </div>
-                    </li>
-                </div>
-            </div>
-
-            <div class="popular_song">
-                <div class="h4">
-                    <h4>Meus Favoritos</h4>
-                    <div class="btn_5">
-                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
-                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
-                    </div>
-                </div>
-
-                <div class="pop_song">
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\ab67616d0000b27392aaf0254618b4de33029ab1.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="7"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.54 (2).jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="8"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.54.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="9"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.55 (1).jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="10"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\ab67706c0000da84ee85d8b8615a4eecc8dc2655.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="11"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\ab67616d00001e0255b52e256a85433e696f2b02.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="12"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.53 (1).jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="13"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\ab67616d0000b273091c48f6f378a0bf8de56454.jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="14"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.54 (1).jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="15"></i>
-                        </div>
-                    </li>
-
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="img\WhatsApp Image 2024-08-07 at 20.03.54 (3).jpeg" alt="img">
-                            <i class="bi playlistPlay bi-play-circle-fill" id="16"></i>
-                        </div>
-                    </li>
-                </div>
-            </div>
         </div>
-    </header>
+      </div>
+
+      <div class="spotify-playlists">
+        <h2></h2>
+        <div class="list">
+          <div class="item">
+            <img src="img\e0a4115a-a452-491a-9e8a-f198db80fc74-1560157134._SX192_SY192_BL0_QL100__UXNaN_FMjpg_QL85_.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\images (1).jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\SpotifyStudios_ManoaMano-1024x1024.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\WhatsApp Image 2024-08-07 at 20.03.53 (2).jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\WhatsApp Image 2024-08-07 at 20.03.54 (1).jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+          
+          <div class="item">
+            <img src="img\WhatsApp Image 2024-08-07 at 20.03.55 (1).jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <div class="spotify-playlists">
+        <h2></h2>
+        <div class="list">
+          <div class="item">
+            <img src="img\ab67616d0000b273c9dee50d9ee501321a43004d.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\ab67616d0000b273eb1117ed6a411587785d7ae4.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\ab67616d0000b27392aaf0254618b4de33029ab1.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\ab67616d0000b273294c660d441da10e69cad7b9.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\ab67616d0000b2733598d562e8fdb234c208364e.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img\ab67616d00001e02cc67927138c3daeb89ddebea.jpeg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+          </div>
+        </div>
+    </div>
 </body>
 </html>
