@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             message.style.opacity = 1;
         }, 100); // Pequeno atraso para que o efeito funcione
-    }, 3000); // 3000 milissegundos = 3 segundos
+    }, 3000); // 2000 milissegundos = 2 segundos
 });
 
 
