@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+     --color-light-50: #f8fafc;
+    --color-purple-50: #ff8800;
+    --color-purple-100: #942db9;
+    --color-purple-200: #460163;
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background: var(--color-gradient);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+footer {
+    background: var(--color-gradient);
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ff8800;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.team-photo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.team-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
