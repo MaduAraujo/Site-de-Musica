@@ -1,42 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
-
-:root {
-     --color-light-50: #f8fafc;
-    --color-purple-50: #ff8800;
-    --color-purple-100: #942db9;
-    --color-purple-200: #460163;
-    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
-}
-
-*{
+body {
+    background-color: #993399;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-body {
-    background: var(--color-gradient);
+h1, h2 {
     color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.card {
-    background-color: #46016372;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    margin: 20px auto;
+
+.input-container {
+    background-color: #460163;
     padding: 20px;
-    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    width: 100%;
     max-width: 600px;
 }
-.card h1, .card h2 {
-    margin: 0;
+
+input[type="text"], textarea {
+    width: calc(125% - 190px);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    font-size: 16px;
 }
-.card p {
-    margin: 10px 0;
-    color: #E0C3FC;
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #993399;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
-.highlight {
-    color: #ff9100;
+
+.output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 640px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #460163;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-controls button:hover {
+    background-color: #993399;
 }
