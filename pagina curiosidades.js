@@ -1,3 +1,5 @@
+const apiKey = 'YOUR_API_KEY'; // Substitua pela sua chave de API do YouTube
+
 let slideIndex = 0;
 
 // Função para mover os slides no carrossel
@@ -12,20 +14,19 @@ function moverSlide(n) {
 async function buscarMusicaFavorita(event) {
     event.preventDefault();
     let musica = document.getElementById('musica-favorita').value.trim();
-    musica = musica.replace(/\s+/g, ''); // Remove espaços entre palavras
-    const url = `https://itunes.apple.com/search?term=${encodeURIComponent(musica)}&media=music&limit=1`;
-
+    musica = musica.replace(/\s+/g, ' '); // Remove espaços extras entre palavras
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(musica)}&type=video&key=${apiKey}&maxResults=1`;
     if (musica) {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            if (data.results.length > 0) {
-                const trackInfo = data.results[0];
+            if (data.items.length > 0) { // Corrigi para acessar o array 'items' ao invés de 'results'
+                const trackInfo = data.items[0].snippet; // Acessando as informações da música
                 document.getElementById('resultado-musica').innerHTML = `
-                    <p><strong>${trackInfo.trackName}</strong> - ${trackInfo.artistName}</p>
-                    <p>Álbum: ${trackInfo.collectionName}</p>
-                    <p><a href="${trackInfo.trackViewUrl}" target="_blank">Ouça no iTunes</a></p>
-                    <img src="${trackInfo.artworkUrl100}" alt="Capa do Álbum">
+                    <p><strong>${trackInfo.title}</strong></p>
+                    <p>Canal: ${trackInfo.channelTitle}</p>
+                    <p><a href="https://www.youtube.com/watch?v=${data.items[0].id.videoId}" target="_blank">Assista no YouTube</a></p>
+                    <img src="${trackInfo.thumbnails.default.url}" alt="Capa do Álbum">
                 `;
             } else {
                 document.getElementById('resultado-musica').innerText = 'Nenhuma informação encontrada para essa música.';
@@ -41,7 +42,7 @@ async function buscarMusicaFavorita(event) {
 // Função para exibir curiosidade
 function exibirCuriosidade(event) {
     event.preventDefault();
-    var curiosidade = document.getElementById('curiosidade').value;
+    const curiosidade = document.getElementById('curiosidade').value;
     if (curiosidade.trim() !== "") {
         document.getElementById('resultado-curiosidade').innerText = 'Você compartilhou: ' + curiosidade;
         document.getElementById('curiosidade').value = '';
